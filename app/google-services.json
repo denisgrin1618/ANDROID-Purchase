@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "873561203082",
+    "firebase_url": "https://sunstonespurchase.firebaseio.com",
+    "project_id": "sunstonespurchase",
+    "storage_bucket": "sunstonespurchase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873561203082:android:7d44bb11b75912c6",
+        "android_client_info": {
+          "package_name": "com.account.sunstones.sunstones_purchase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873561203082-luk53u8gqufo89978kjit2ijn94ubujc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.account.sunstones.sunstones_purchase",
+            "certificate_hash": "28a8cd1fb066f09ef5ac9cea43a2592dd75e7654"
+          }
+        },
+        {
+          "client_id": "873561203082-1iv3s19slf0n3s9ku190o0va1maaivdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_eI_dHFf0uvOx62b0o8hfbvqdHQHrd3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873561203082-1iv3s19slf0n3s9ku190o0va1maaivdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

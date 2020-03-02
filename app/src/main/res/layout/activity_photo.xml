@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhotoActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.account.sunstones.sunstones_purchase.PaintView
+        android:id="@+id/paint_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/liner_layout_toolbar_2"
+        android:layout_width="383dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_left"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_left"
+            android:onClick="onClickButtonLeft" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_save"
+            android:onClick="onClickButtonSave" />
+
+        <Button
+            android:id="@+id/button_pencil"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_pencil"
+            android:onClick="onClickButtonPencil" />
+
+        <Button
+            android:id="@+id/button_zoom"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_zoom_gray"
+            android:onClick="onClickButtonZoom" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_add"
+            android:onClick="onClickButtonAdd" />
+
+        <Button
+            android:id="@+id/button_undo"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_undo"
+            android:onClick="onClickButtonUndo" />
+
+        <Button
+            android:id="@+id/button_right"
+            android:layout_width="@android:dimen/app_icon_size"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_margin="2dp"
+            android:background="@drawable/button_right"
+            android:onClick="onClickButtonRight" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_layout_toolbar_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/liner_layout_toolbar_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <SeekBar
+            android:id="@+id/seek_bar_size_phont"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="150"
+            android:min="30"
+            android:progress="50"
+            android:progressTint="@color/colorTitleText"
+            android:thumb="@drawable/phont_size_32" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
